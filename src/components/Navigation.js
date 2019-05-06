@@ -5,6 +5,7 @@
  */
 
 const React = require('react')
+const styles = require('./styles/index')
 
 /**
  * Define component
@@ -13,7 +14,7 @@ const React = require('react')
 function Navigation() {
   return (
     <div>
-      <div className="App">
+      <styles.NavigationStyle>
         <h1>React Router Mini</h1>
         <div>
           <a href="">Home</a>
@@ -24,7 +25,7 @@ function Navigation() {
         <div>
           <a href="">Contact</a>
         </div>
-      </div>
+      </styles.NavigationStyle>
     </div>
   )
 }
