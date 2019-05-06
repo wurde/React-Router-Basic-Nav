@@ -7,7 +7,7 @@ const components = require('./components/index')
  * Import component styles
  */
 
-require('./App.css')
+require('./App.scss')
 
 /**
  * Define component

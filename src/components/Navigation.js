@@ -1,8 +1,16 @@
 'use strict'
 
+/**
+ * Dependencies
+ */
+
 const React = require('react')
 
-const Navigation = () => {
+/**
+ * Define component
+ */
+
+function Navigation() {
   return (
     <div>
       <div className="App">
@@ -18,8 +26,8 @@ const Navigation = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 /**
  * Export component
