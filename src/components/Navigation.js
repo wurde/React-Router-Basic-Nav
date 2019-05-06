@@ -1,4 +1,6 @@
-import React from 'react';
+'use strict'
+
+const React = require('react')
 
 const Navigation = () => {
   return (
@@ -19,4 +21,8 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+/**
+ * Export component
+ */
+
+module.exports = Navigation

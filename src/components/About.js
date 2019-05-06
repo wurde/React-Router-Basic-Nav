@@ -1,5 +1,19 @@
-import React from 'react';
+'use strict'
 
-const About = () => <h1>About</h1>;
+const React = require('react')
 
-export default About;
+/**
+ * Define component
+ */
+
+function About() {
+  return (
+    <h1>About</h1>
+  )
+}
+
+/**
+ * Export component
+ */
+
+module.exports = About

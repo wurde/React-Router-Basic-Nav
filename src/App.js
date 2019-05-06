@@ -1,11 +1,28 @@
-import React from 'react';
-import './App.css';
-import { Home, About, Contact, Navigation } from './components';
+'use strict'
 
-const App = () => (
-  <div>
-    <Navigation />
-  </div>
-);
+const React = require('react')
+const components = require('./components/index')
 
-export default App;
+/**
+ * Import component styles
+ */
+
+require('./App.css')
+
+/**
+ * Define component
+ */
+
+function App() {
+  return (
+    <div>
+      <components.Navigation />
+    </div>
+  )
+}
+
+/**
+ * Export component
+ */
+
+module.exports = App
