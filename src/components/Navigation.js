@@ -5,7 +5,14 @@
  */
 
 const React = require('react')
+const react_router_dom = require('react-router-dom')
 const styles = require('./styles/index')
+
+/**
+ * Constants
+ */
+
+const Link = react_router_dom.Link
 
 /**
  * Define component
@@ -17,13 +24,13 @@ function Navigation() {
       <styles.NavigationStyle>
         <h1>React Router Mini</h1>
         <div>
-          <a href="">Home</a>
+          <Link to="/">Home</Link>
         </div>
         <div>
-          <a href="">About</a>
+          <Link to="/about">About</Link>
         </div>
         <div>
-          <a href="">Contact</a>
+          <Link to="/contact">Contct</Link>
         </div>
       </styles.NavigationStyle>
     </div>
