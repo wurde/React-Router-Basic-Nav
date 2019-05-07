@@ -5,8 +5,7 @@
  */
 
 module.exports = {
-  Home: require('./Home'),
-  About: require('./About'),
-  Contact: require('./Contact'),
-  Navigation: require('./Navigation'),
+  HomePage: require('./HomePage/HomePage'),
+  AboutPage: require('./AboutPage/AboutPage'),
+  ContactPage: require('./ContactPage/ContactPage'),
 }
