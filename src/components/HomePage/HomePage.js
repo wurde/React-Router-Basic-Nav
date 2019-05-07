@@ -15,7 +15,16 @@ function HomePage() {
   return (
     <div className="jsx-HomePage">
       <shared.Navigation />
-      <h1>Home Page</h1>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h1>Home Page</h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

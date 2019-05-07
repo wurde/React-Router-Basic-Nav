@@ -17,7 +17,19 @@ const styled = styled_components.default
  */
 
 let NavigationStyle = styled.div(() => `
-  text-align: center;
+  background-color: #333;
+  color: #FFF;
+
+  a {
+    color: #FFF;
+    padding: 15px 25px;
+  }
+  a:hover {
+    color: #DDD;
+  }
+  a:active {
+    color: #999;
+  }
 `)
 
 /**

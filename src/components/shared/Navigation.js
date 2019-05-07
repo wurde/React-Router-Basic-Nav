@@ -20,20 +20,25 @@ const Link = react_router_dom.Link
 
 function Navigation() {
   return (
-    <div>
+    <header>
       <styles.NavigationStyle>
-        <h1>React Router Mini</h1>
-        <div>
-          <Link to="/">Home</Link>
-        </div>
-        <div>
-          <Link to="/about">About</Link>
-        </div>
-        <div>
-          <Link to="/contact">Contct</Link>
+        <div className="container">
+          <div className="row py-4">
+            <div className="col-12 col-md-4 d-flex align-items-center">
+              <h3>React Router Mini</h3>
+            </div>
+
+            <div className="col-12 col-md-3"></div>
+
+            <div className="col-12 col-md-5 d-flex justify-content-between align-items-center">
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contct</Link>
+            </div>
+          </div>
         </div>
       </styles.NavigationStyle>
-    </div>
+    </header>
   )
 }
 
