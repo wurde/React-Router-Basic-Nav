@@ -1,5 +1,23 @@
-import React from 'react';
+'use strict'
 
-const Contact = () => <h1>Contact</h1>;
+/**
+ * Dependencies
+ */
 
-export default Contact;
+const React = require('react')
+
+/**
+ * Define component
+ */
+
+function Contact() {
+  return (
+    <h1>Contact</h1>
+  )
+}
+
+/**
+ * Export component
+ */
+
+module.exports = Contact

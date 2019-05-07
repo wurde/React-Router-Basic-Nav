@@ -1,11 +1,40 @@
-import React from 'react';
-import './App.css';
-import { Home, About, Contact, Navigation } from './components';
+'use strict'
 
-const App = () => (
-  <div>
-    <Navigation />
-  </div>
-);
+const React = require('react')
+const react_router_dom = require('react-router-dom')
+const components = require('./components/index')
 
-export default App;
+/**
+ * Constants
+ */
+
+const BrowserRouter = react_router_dom.BrowserRouter
+const Route = react_router_dom.Route
+
+/**
+ * Import component styles
+ */
+
+require('./App.scss')
+
+/**
+ * Define component
+ */
+
+function App() {
+  return (
+    <BrowserRouter>
+      <components.Navigation />
+
+      <Route exact path="/" component={components.Home} />
+      <Route path="/about" component={components.About} />
+      <Route path="/contact" component={components.Contact} />
+    </BrowserRouter>
+  )
+}
+
+/**
+ * Export component
+ */
+
+module.exports = App

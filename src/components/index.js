@@ -1,6 +1,12 @@
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Navigation from './Navigation';
+'use strict'
 
-export { Home, About, Contact, Navigation };
+/**
+ * Export components
+ */
+
+module.exports = {
+  Home: require('./Home'),
+  About: require('./About'),
+  Contact: require('./Contact'),
+  Navigation: require('./Navigation'),
+}

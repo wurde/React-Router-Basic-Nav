@@ -1,5 +1,23 @@
-import React from 'react';
+'use strict'
 
-const Home = () => <h1>Home</h1>;
+/**
+ * Dependencies
+ */
 
-export default Home;
+const React = require('react')
+
+/**
+ * Define component
+ */
+
+function Home() {
+  return (
+    <h1>Home</h1>
+  )
+}
+
+/**
+ * Export component
+ */
+
+module.exports = Home
